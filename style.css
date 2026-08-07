@@ -1,0 +1,187 @@
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+                url('https://i.postimg.cc/Z5v7nCK4/Chat-GPT-Image-Aug-8-2026-12-11-34-AM.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.content-wrapper {
+    position: relative;
+}
+
+.glass-card {
+    position: relative;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 40px 30px 30px;
+    border-radius: 25px;
+    text-align: center;
+    color: white;
+    width: 320px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+/* تنسيق زر الصوت */
+.audio-btn {
+    position: absolute;
+    top: 18px;
+    right: 18px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    color: white;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 11px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    transition: all 0.2s ease;
+    z-index: 10;
+}
+
+.audio-btn:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: translateY(-2px);
+}
+
+.views-counter {
+    position: absolute;
+    bottom: 14px;
+    left: 18px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.eye-icon {
+    font-style: normal;
+    font-size: 13px;
+}
+
+.avatar-ring {
+    width: 96px;
+    height: 96px;
+    margin: 0 auto 16px;
+    border-radius: 50%;
+    padding: 4px;
+    background: conic-gradient(from 0deg, #35e0c9, #7c5cff, #ff5cd6, #35e0c9);
+    animation: spin 6s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+.profile-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    border: 3px solid #0d0a1f;
+}
+
+.name {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 0 0 18px;
+}
+
+.status-card {
+    display: flex;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    border-radius: 14px;
+    padding: 10px 14px;
+    margin-bottom: 20px;
+}
+
+.status-left {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.status-avatar {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.status-text {
+    text-align: left;
+}
+
+.status-title {
+    margin: 0;
+    font-size: 13px;
+}
+
+.status-label {
+    font-weight: 700;
+}
+
+.status-sub {
+    margin: 2px 0 0;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.social-row {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.social-btn {
+    width: 42px;
+    height: 42px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.social-btn:hover {
+    transform: translateY(-3px);
+}
+
+.social-btn.tiktok { background: #010101; }
+.social-btn.youtube { background: #ff0000; }
+.social-btn.whatsapp { background: #25d366; }
+.social-btn.discord { background: #5865f2; }
+.social-btn.kick { background: #53fc18; }
+.social-btn.donate { background: #F5273F; } /* زر الدعم باللون الأحمر مثل يوتيوب */
+
+.kick-letter {
+    font-weight: 800;
+    font-size: 18px;
+    color: #0d0a1f;
+}
+
+.donate-letter {
+    font-weight: 800;
+    font-size: 18px;
+    color: #ffffff;
+}
